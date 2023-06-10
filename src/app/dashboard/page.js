@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <body>
-          <p>testsssss</p>
+          <p>Dashboard</p>
           <button type="button" onClick={() => router.push('/dashboard')}>
             Dashboard
           </button>

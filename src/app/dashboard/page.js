@@ -6,13 +6,8 @@ export default function Home() {
 
   return (
     <>
-      <header>
-        <title>
-          Work calculator
-        </title>
-      </header>
       <body>
-          <p>Body Test naja</p>
+          <p>testsssss</p>
           <button type="button" onClick={() => router.push('/dashboard')}>
             Dashboard
           </button>

@@ -27,7 +27,6 @@ const Container = styled.div`
 const Component = styled.div`
   height: 100vh;
   width: 50vw;
-  // text-align: center;
   position: relative;
   
   * {
@@ -36,23 +35,23 @@ const Component = styled.div`
 `;
 
 const Login = styled.div`
-  background-color: #E8F6EF;
-  width: 30em;
-  height: 15em;
-  border-radius: 6px;
-  text-align: center;
-  padding: 2em;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // background-color: #E8F6EF;
+  // width: 30em;
+  // height: 15em;
+  // border-radius: 6px;
+  // text-align: center;
+  // padding: 2em;
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 
-  > * {
-    width: 100%;
-    margin: 1em 0;
-  }
+  // > * {
+  //   width: 100%;
+  //   margin: 1em 0;
+  // }
 `
 
 const Title = styled.p`

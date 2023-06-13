@@ -8,7 +8,6 @@ import Swal from 'sweetalert2'
 
 import Input from '../components/Input'
 import Button from '../components/Button'
-import Sidebar from '../components/layout/sidebar'
 
 import httpClient from '../helper/httpClient'
 

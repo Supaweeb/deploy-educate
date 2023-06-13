@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import styled from 'styled-components';
-import Swal from 'sweetalert2'
 
 import Input from '../components/Input'
 import Button from '../components/Button'
@@ -55,17 +54,6 @@ const Login = styled.div`
   }
 `
 
-const Title = styled.p`
-  margin: 0;
-  text-align: start;
-  position: absolute;
-  margin-top: -1.75em;
-  font-size: 2em;
-  text-shadow: -0.25px 0 #000000, 0 0.25px #000000, 0.25px 0 #000000, 0 -0.25px #000000;
-
-  color: #1B9C85;
-`
-
 export default function Home() {
   const router = useRouter()
 
@@ -75,6 +63,14 @@ export default function Home() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
+  const fetchData = () => {
+    httpClient.get('').then(({ data }) => {
+      console.log(data)
+    }).catch((err) => {
+      console.log('err ', err)
+    })
+  }
+
   const handlerOnLogin = (e) => {
     e.preventDefault()
 
@@ -82,24 +78,11 @@ export default function Home() {
       username,
       password
     }).then(({ data }) => {
+      console.log(data)
       setIsError(false)
-      return Swal.fire({
-        title: 'Login successful',
-        text: '',
-        icon: 'success',
-      })
-    }).then((result) => {
-      if (result.isConfirmed) {
-        router.push('/dashboard')
-      }
     }).catch((err) => {
       console.log('err ', err)
       setIsError(true)
-      Swal.fire({
-        title: 'Login fail',
-        text: `Error : ${err.message}`,
-        icon: 'error',
-      })
     })
   }
 
@@ -108,9 +91,8 @@ export default function Home() {
       <Container>
         <Component>
           <Login>
-            <Title>Work time</Title>
             <Input
-              id="outlined-required username"
+              id="outlined-required"
               label="Username"
               onClick={() => isError && setUsername('')}
               onChange={(e) => setUsername(e.target.value)}
@@ -118,7 +100,7 @@ export default function Home() {
               value={username}
             />
             <Input
-              id="outlined-required password"
+              id="outlined-required"
               label="Password"
               type="password"
               onClick={() => isError && setPassword('')}

@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Container>
           <p>Dashboard</p>
-          <button type="button" onClick={() => router.push('/dashboard')}>
+          <button type="button" onClick={() => router.push('/')}>
             Dashboard
           </button>
       </Container>

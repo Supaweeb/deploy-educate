@@ -126,7 +126,7 @@ export default function Home() {
               error={isError}
               value={password}
             />
-            <Button onClick={handlerOnLogin} success>Login</Button>
+            <Button onClick={handlerOnLogin}>Login</Button>
           </Login>
         </Component>
       </Container>

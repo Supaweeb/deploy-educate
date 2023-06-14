@@ -81,7 +81,6 @@ export default function Home() {
       username,
       password
     }).then(({ data }) => {
-      console.log(data)
       setIsError(false)
       return Swal.fire({
         title: 'Login successful',
@@ -110,7 +109,7 @@ export default function Home() {
           <Login>
             <Title>Work time</Title>
             <Input
-              id="outlined-required"
+              id="outlined-required username"
               label="Username"
               onClick={() => isError && setUsername('')}
               onChange={(e) => setUsername(e.target.value)}
@@ -118,7 +117,7 @@ export default function Home() {
               value={username}
             />
             <Input
-              id="outlined-required"
+              id="outlined-required password"
               label="Password"
               type="password"
               onClick={() => isError && setPassword('')}

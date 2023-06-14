@@ -4,6 +4,7 @@ import styled, { ThemeProvider, css } from 'styled-components'
 
 const InputComponent = styled(TextField)`
     background-color: #ffffff;
+    border-radius: 4px;
 
     &:focus {
         border-color: #116A7B;

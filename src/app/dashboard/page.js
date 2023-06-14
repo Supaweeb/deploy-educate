@@ -6,12 +6,12 @@ export default function Home() {
 
   return (
     <>
-      <body>
+      <div style={{ display: "block", margin: "1em" }}>
           <p>Dashboard</p>
           <button type="button" onClick={() => router.push('/dashboard')}>
             Dashboard
           </button>
-      </body>
+      </div>
     </>
   )
 }

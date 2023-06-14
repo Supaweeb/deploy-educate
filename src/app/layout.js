@@ -6,6 +6,10 @@ import Sidebar from '../components/Sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const Body = styled.body`
+  margin: 0;
+`;
+
 export default function RootLayout({ children }) {
   const pathname = usePathname();
 

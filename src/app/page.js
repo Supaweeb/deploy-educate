@@ -62,7 +62,6 @@ const Title = styled.p`
   margin-top: -1.75em;
   font-size: 2em;
   text-shadow: -0.25px 0 #000000, 0 0.25px #000000, 0.25px 0 #000000, 0 -0.25px #000000;
-
   color: #1B9C85;
 `
 

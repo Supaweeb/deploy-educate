@@ -13,12 +13,12 @@ export default function Home() {
 
   return (
     <>
-      <Container>
+      <div style={{ display: "block", margin: "1em" }}>
           <p>Dashboard</p>
           <button type="button" onClick={() => router.push('/')}>
             Dashboard
           </button>
-      </Container>
+      </div>
     </>
   )
 }

@@ -86,7 +86,7 @@ const Profile = styled.div`
     }
 `
 
-const Sidebar = (props) => {
+const _Sidebar = (props) => {
     const [isClose, setIsClose] = useState(true)
 
     return (
@@ -108,10 +108,9 @@ const Sidebar = (props) => {
                     </ol>
                 </Navbar>
             </Container>
-        </>
-        
+        </> 
     )
 }
 
 
-export default Sidebar
+export default _Sidebar
